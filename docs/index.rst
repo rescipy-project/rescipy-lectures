@@ -1,9 +1,13 @@
-=================
-reScipy tutorials
-=================
+================
+reScipy lectures
+================
 
-Tutorials for using Python in scientific research.
-This website is part of the reScipy project.
+Tutorials on Python for scientific research.
+
+These tutorials are heavily based on and inspired by the `Scipy Lecture Notes <https://scipy-lectures.org/>`_ while they attempt to provide additional information specifically for researchers and academics.
+
+This website is part of the `reScipy project
+<https://rescipy-project.readthedocs.io>`_.
 
 .. toctree::
    :caption: Contents
@@ -16,5 +20,4 @@ This website is part of the reScipy project.
 Feedback
 ========
 
-Please report any feedback or error by opening an issue on the `issue tracker
-<https://github.com/rescipy-project/rescipy-tutorials/issues>`_ of the code repository.
+Please report any feedback or error by opening an issue on the `issue tracker <https://github.com/rescipy-project/rescipy-lectures/issues>`_ of the code repository.
