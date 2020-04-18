@@ -8,10 +8,12 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>The Python programming language &mdash; rescipy-lectures  documentation</title>
+  <title>Python programming language &mdash; rescipy-lectures  documentation</title>
   
 
   
+  
+    <link rel="shortcut icon" href="_static/rescipy_icon.png"/>
   
   
   
@@ -35,7 +37,7 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="reScipy tutorials" href="index.html" /> 
+    <link rel="prev" title="reScipy lectures" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -52,6 +54,9 @@
             <a href="index.html" class="icon icon-home"> rescipy-lectures
           
 
+          
+            
+            <img src="_static/rescipy_logo_small.png" class="logo" alt="Logo"/>
           
           </a>
 
@@ -81,8 +86,11 @@
             
               <p class="caption"><span class="caption-text">Contents</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">The Python programming language</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Python programming language</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#actual-python-programming">Actual Python programming</a></li>
 </ul>
 </li>
 </ul>
@@ -130,7 +138,7 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>The Python programming language</li>
+      <li>Python programming language</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -149,11 +157,35 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="the-python-programming-language">
-<h1>The Python programming language<a class="headerlink" href="#the-python-programming-language" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="python-programming-language">
+<h1>Python programming language<a class="headerlink" href="#python-programming-language" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Python is a multi-platform, free and open-source programming language, first released in 1991. The current version, Python 3, is one of the most widely used programming languages at date. It is an <em>interpreted</em> language (as opposed to <em>compiled</em> as C or Fortran), which means one does not need to compile Python code before executing it. It is an high-level, general purpose language and supports object-oriented programming.</p>
+<p>An overview of the Python scientific ecosystem is given in <a class="reference external" href="https://scipy-lectures.org/intro/intro.html">section 1.1</a> of the Scipy Lecture Notes.</p>
+</div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>Here are reported the instructions to install Python in your system.</p>
+<p>Python comes in various flavors and can be installed in different ways.</p>
+<p>However, the easiest and recommended way to have Python in your system is to install a scientific distribution such as the <a class="reference external" href="https://www.anaconda.com/distribution/">Anaconda distribution</a>, which provides a manager for a full set of libraries and software to perform data analysis with Python.</p>
+</div>
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>After the <a class="reference external" href="https://www.anaconda.com/distribution/">Anaconda installation</a>, you can run the Ananconda Navigator which provides you with all the tools to use and setup your Python installation.</p>
+<p>Between them, <a class="reference external" href="https://jupyterlab.readthedocs.io/en/stable/">JupyterLab</a> is the core application you would use to actually perform all your data analysis. It integrates a browser-based user-interface for managing the <a class="reference external" href="https://jupyter-notebook.readthedocs.io/en/stable/">Jupyter Notebooks</a>.
+A Jupyter Notebook is an interactive programming interface with a Python interpreter running under the hood.</p>
+<p>After opening JupyterLab, in the Launcher main window you can open a new Notebook (or do <em>File &gt; New &gt; Notebook</em>) and start already to type some Python code. In the empty cell that appears, you can try to type:</p>
+<p><code class="docutils literal notranslate"><span class="pre">print(&quot;Hello</span> <span class="pre">World!&quot;)</span></code></p>
+<p>and press the Run button ▸ (the small triangle just above the cell) or just hit <em>Shift+Enter</em>. Congratulations, you just run your first Python code! See the next paragraph for more information on Python programming.</p>
+<p>To have an idea on what you can actually do, check the <a class="reference external" href="https://docs.bokeh.org/en/latest/docs/gallery.html">Bokeh</a> and <a class="reference external" href="http://holoviews.org/gallery/index.html">Holoviews</a> galleries, which provides some interactive examples.</p>
+<p>You can go through the <a class="reference external" href="https://jupyterlab.readthedocs.io/en/stable/user/interface.html">JupyterLab User Guide</a> and the <a class="reference external" href="https://jupyter-notebook.readthedocs.io/en/stable/notebook.html">Jupyter Notebook documentation</a> to to get familiar with the user interface.</p>
+</div>
+<div class="section" id="actual-python-programming">
+<h2>Actual Python programming<a class="headerlink" href="#actual-python-programming" title="Permalink to this headline">¶</a></h2>
+<p>Printing <code class="docutils literal notranslate"><span class="pre">Hello</span> <span class="pre">World!</span></code> has been pretty exciting but with Python you can do quite more..</p>
+<p>Actually, one do not need at all to be a programmer to use Python to do some data analysis, still, knowing the basis of the language will help you immensely in doing it properly.</p>
+<p>The <a class="reference external" href="https://scipy-lectures.org/intro/language/python_language.html">section 1.2</a> of the Scipy Lecture Notes dedicated to Python provides a very good introduction to the language itself, and one would at least be familiar with the sections <a class="reference external" href="https://scipy-lectures.org/intro/language/first_steps.html">1.2.1</a>, <a class="reference external" href="https://scipy-lectures.org/intro/language/basic_types.html">1.2.2</a> and <a class="reference external" href="https://scipy-lectures.org/intro/language/control_flow.html">1.2.3</a>. It would still be useful to go through the rest if you are interested in write some code or automatize some operations.</p>
+<p>Depending on your inclination, the same basic aspects are covered in much more detail in chapter 1 to 5 of the excellent official <a class="reference external" href="https://docs.python.org/3/tutorial/">Python tutorial</a>, while if you are planning to develop some code, consider going through the chapters 6 to 10.</p>
 </div>
 </div>
 
@@ -166,7 +198,7 @@
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
       
-        <a href="index.html" class="btn btn-neutral float-left" title="reScipy tutorials" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral float-left" title="reScipy lectures" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
