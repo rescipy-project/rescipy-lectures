@@ -2,17 +2,20 @@
 Analysis
 ========
 
-Introduction
-============
+[coming soon]
 
-`scipy <https://scipy-lectures.org/intro/scipy.html>`_
+.. 
+    Introduction
+    ============
 
-`image ananlysis with scipy <https://scipy-lectures.org/advanced/image_processing/index.html>`_
+    `scipy <https://scipy-lectures.org/intro/scipy.html>`_
 
-`scikit-image <https://scipy-lectures.org/packages/scikit-image/index.html>`_
+    `image ananlysis with scipy <https://scipy-lectures.org/advanced/image_processing/index.html>`_
 
-`fitting with scipy <https://scipy-lectures.org/advanced/mathematical_optimization/index.html>`_
+    `scikit-image <https://scipy-lectures.org/packages/scikit-image/index.html>`_
 
-`lmfit <https://lmfit.github.io/lmfit-py/>`_
+    `fitting with scipy <https://scipy-lectures.org/advanced/mathematical_optimization/index.html>`_
 
-`symfit <https://symfit.readthedocs.io/en/stable/index.html>`_
+    `lmfit <https://lmfit.github.io/lmfit-py/>`_
+
+    `symfit <https://symfit.readthedocs.io/en/stable/index.html>`_

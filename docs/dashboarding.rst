@@ -2,9 +2,12 @@
 Dashboarding
 ============
 
-Introduction
-============
+[coming soon]
 
-`panel <https://panel.holoviz.org/user_guide/index.html>`_
+.. 
+    Introduction
+    ============
 
-`param <https://param.holoviz.org/>`_
+    `panel <https://panel.holoviz.org/user_guide/index.html>`_
+
+    `param <https://param.holoviz.org/>`_

@@ -19,7 +19,7 @@ Python comes in various flavors and can be installed in different ways. However,
 Usage
 =====
 
-After the `Anaconda installation <https://www.anaconda.com/distribution/>`_, you can run the Ananconda Navigator which provides you with the tools to use and setup your Python installation. 
+After the installation of `Anaconda <https://www.anaconda.com/distribution/>`_ Python 3 version, you can run the Ananconda Navigator which provides you with the tools to use and setup your Python installation. 
 
 Between these tools, `JupyterLab <https://jupyterlab.readthedocs.io/en/stable/>`_ is the core application you will use to actually perform your data analysis. It consists of a browser-based user-interface for managing `Jupyter Notebooks <https://jupyter-notebook.readthedocs.io/en/stable/>`_.
 A Jupyter Notebook is an interactive-programming browser-interface with a Python interpreter running under the hood.
@@ -38,7 +38,7 @@ or simply
 
 and press the Run button ► (the small triangle just above the cell) or just hit *Shift+Enter*. Congratulations, you just run your first Python code! See the next paragraph for more information on Python programming.
 
-To have an idea on what you can actually do into a Jupyter Notebook, check the `Bokeh <https://docs.bokeh.org/en/latest/docs/gallery.html>`_ and `Holoviews <http://holoviews.org/gallery/index.html>`_ galleries, which provides some interactive examples.
+To have an idea on what one can actually do into a Jupyter Notebook, have a look at the `Bokeh <https://docs.bokeh.org/en/latest/docs/gallery.html>`_ and `Holoviews <http://holoviews.org/gallery/index.html>`_ galleries, which provides some interactive examples.
 
 You can go through the `JupyterLab User Guide <https://jupyterlab.readthedocs.io/en/stable/user/interface.html>`_ and the `Jupyter Notebook documentation <https://jupyter-notebook.readthedocs.io/en/stable/notebook.html>`_ to to get familiar with the user interface.
 
