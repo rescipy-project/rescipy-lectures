@@ -2,6 +2,11 @@
 reScipy lectures
 ================
 
+.. image:: logo/rescipy_banner.png
+   :width: 405
+   :alt: reScipy, Python for Scientific reSearch
+   :target: https://rescipy-project.readthedocs.io
+
 **Tutorials on Python for scientific research.**
 
 These tutorials are heavily based on the `Scientific Python Lecture Notes <https://scipy-lectures.org/>`_, while they attempt to provide additional information on the Python ecosystem, specifically for scientific research.

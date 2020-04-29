@@ -2,10 +2,6 @@
 Python language
 ===============
 
-.. image:: logo/rescipy_banner.png
-   :width: 405
-   :alt: reScipy, Python for Scientific reSearch
-   :target: index.html
 
 Introduction
 ============
