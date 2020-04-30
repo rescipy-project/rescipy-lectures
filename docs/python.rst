@@ -8,7 +8,7 @@ Introduction
 
 Python is a multi-platform, free and open-source programming language, first released in 1991. The current version, Python 3, is one of the most widely used programming languages to date. Python is an *interpreted* language (as opposed to *compiled* as C or Fortran), which means one does not need to compile the code before executing it. This allows you to run Python code *interactively* (you can modify it and immediately run it) through the provided Python **interpreter**, a command-line tool which can run on-the-fly the code you type in. Python is defined as a high-level, general purpose language and supports object-oriented programming.
 
-An overview of the Python scientific ecosystem is given in `section 1.1 <https://scipy-lectures.org/intro/intro.html>`_ of the Scipy Lecture Notes. 
+An overview of the Python scientific ecosystem is given in `section 1.1 <https://scipy-lectures.org/intro/intro.html>`_ of the SciPy Lecture Notes. 
 
 
 Installation
@@ -51,7 +51,7 @@ Printing ``Hello World!`` has been pretty exciting but with Python you can do qu
 
 Actually, one does not need at all to be a programmer in order to use Python for data analysis, still, knowing the basis of the language will help you immensely in doing it properly.
 
-The `section 1.2 <https://scipy-lectures.org/intro/language/python_language.html>`_ of the Scipy Lecture Notes dedicated to Python provides a very good introduction to the language itself, and initially one should at least be familiar with the sections `1.2.1 <https://scipy-lectures.org/intro/language/first_steps.html>`_, `1.2.2 <https://scipy-lectures.org/intro/language/basic_types.html>`_ and `1.2.3 <https://scipy-lectures.org/intro/language/control_flow.html>`_. It would still be useful to go through the rest, also if you are interested in write some code or automatize some operations. In the latter case, the `Spyder <https://docs.spyder-ide.org/>`_ development environment, included in Anaconda, could come in handy.
+The `section 1.2 <https://scipy-lectures.org/intro/language/python_language.html>`_ of the SciPy Lecture Notes dedicated to Python provides a very good introduction to the language itself, and initially one should at least be familiar with the sections `1.2.1 <https://scipy-lectures.org/intro/language/first_steps.html>`_, `1.2.2 <https://scipy-lectures.org/intro/language/basic_types.html>`_ and `1.2.3 <https://scipy-lectures.org/intro/language/control_flow.html>`_. It would still be useful to go through the rest, also if you are interested in write some code or automatize some operations. In the latter case, the `Spyder <https://docs.spyder-ide.org/>`_ development environment, included in Anaconda, could come in handy.
 
 Depending on your inclination, these same basic aspects are covered in more detail in chapters 1 to 5 of the excellent official `Python tutorial <https://docs.python.org/3/tutorial/>`_, while if you are planning to develop code, consider going through the chapters 6 to 10.
 
@@ -134,4 +134,4 @@ In the last example, ``convolve`` has been imported with the *shorthand* ``conv`
 
 The same concept of importing applies similarly to Python *scripts*: simple text files, you may have written by yourself, typically with '.py' extension, and containing custom definitions of functions or other objects you want to reuse.
 
-To have an insight into scripts and modules, check the section `1.2.5 <https://scipy-lectures.org/intro/language/reusing_code.html>`_ of Scipy lectures and `chapter 6 <https://docs.python.org/3/tutorial/modules.html>`_ of the Python tutorial.
+To have an insight into scripts and modules, check the section `1.2.5 <https://scipy-lectures.org/intro/language/reusing_code.html>`_ of SciPy lectures and `chapter 6 <https://docs.python.org/3/tutorial/modules.html>`_ of the Python tutorial.

@@ -2,7 +2,11 @@
 Advanced topics
 ===============
 
-[coming soon]
+.. toctree::
+   :caption: Contents
+   :maxdepth: 1
+   
+   /advanced_topics/packages_installation
 
 .. 
     Introduction
