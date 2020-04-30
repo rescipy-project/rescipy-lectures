@@ -22,7 +22,7 @@ This website is part of the `reScipy project <https://rescipy-project.readthedoc
    plotting
    analysis
    dashboarding
-   advanced
+   appendices/index
 
 
 Feedback

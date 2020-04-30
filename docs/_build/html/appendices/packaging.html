@@ -1,0 +1,237 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Packaging &mdash; rescipy-lectures  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/rescipy_icon.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> rescipy-lectures
+          
+
+          
+            
+            <img src="../_static/rescipy_logo_small.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../python.html">1. Python language</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data.html">2. Data handling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plotting.html">3. Plotting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis.html">4. Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dashboarding.html">5. Dashboarding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Appendices</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">rescipy-lectures</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Packaging</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/appendices/packaging.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="packaging">
+<h1>Packaging<a class="headerlink" href="#packaging" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://packaging.python.org/tutorials/packaging-projects/">pip instructions</a></p>
+<p>Install pip utilities:</p>
+<p>pip install twine setuptools wheel</p>
+<p>In the setup.py folder, create the package:</p>
+<p>python3 setup.py sdist bdist_wheel</p>
+<p>Upload it to PyPi (you need an account):</p>
+<p>python3 -m twine upload dist/*</p>
+<p><a class="reference external" href="https://docs.conda.io/projects/conda-build/en/latest/user-guide/tutorials/build-pkgs-skeleton.html">conda instructions</a></p>
+<p>Once you have a package [packagename] in PyPi, install conda utilities:</p>
+<p>conda install conda-build anaconda-client</p>
+<p>Generate setup files:</p>
+<p>conda skeleton pypi [packagename]</p>
+<p>If [packagename] requires additional packages use:</p>
+<p>conda skeleton pypi –extra-specs [additionalpackage] [packagename]</p>
+<p>If the [additionalpackage] is in a particular channel (e.g. conda-forge) you have also to add the channel to you rconfiguration:</p>
+<p>conda config –append channels conda-forge</p>
+<p>Building for your platform and the Python version of your environment:</p>
+<p>conda-build [packagename]</p>
+<p>Building for your platform and a specific Python version
+conda-build –python 3.7 [packagename]</p>
+<p>this will create build files:
+~/miniconda/conda-bld/linux-64/[packagename]-py37_0.tar.bz2</p>
+<p>Converting for all platforms:</p>
+<p>conda convert –platform all ~/miniconda/conda-bld/linux-64/[packagename].tar.bz2 -o outputdir/</p>
+<p>Upload to Anaconda (you need an account on Anaconda.org). Login first:</p>
+<p>anaconda login</p>
+<p>Upload (you need to to this for each platform/Python version you created):</p>
+<p>anaconda upload ~/miniconda/conda-bld/linux-64/[packagename]-py37_0.tar.bz2</p>
+<p>Logout:</p>
+<p>anaconda logout</p>
+<p>To clean up your folders:</p>
+<p>conda build purge</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Mirco Panighel
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

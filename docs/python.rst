@@ -1,24 +1,24 @@
-===============
-Python language
-===============
+==================
+1. Python language
+==================
 
 
-Introduction
-============
+1.1 Introduction
+================
 
 Python is a multi-platform, free and open-source programming language, first released in 1991. The current version, Python 3, is one of the most widely used programming languages to date. Python is an *interpreted* language (as opposed to *compiled* as C or Fortran), which means one does not need to compile the code before executing it. This allows you to run Python code *interactively* (you can modify it and immediately run it) through the provided Python **interpreter**, a command-line tool which can run on-the-fly the code you type in. Python is defined as a high-level, general purpose language and supports object-oriented programming.
 
 An overview of the Python scientific ecosystem is given in `section 1.1 <https://scipy-lectures.org/intro/intro.html>`_ of the SciPy Lecture Notes. 
 
 
-Installation
-============
+1.2 Installation
+================
 
 Python comes in various flavors and can be installed in different ways. However, the easiest way to have Python in your system is to install a scientific distribution such as the `Anaconda distribution <https://www.anaconda.com/distribution/>`_, which provides a manager for a full set of libraries and software to perform data analysis with Python.
 
 
-Usage
-=====
+1.3 Usage
+=========
 
 After the installation of `Anaconda <https://www.anaconda.com/distribution/>`_ Python 3 version, you can run the Ananconda Navigator which provides you with the tools to use and setup your Python installation. 
 
@@ -44,8 +44,8 @@ To have an idea on what one can actually do into a Jupyter Notebook, have a look
 You can go through the `JupyterLab User Guide <https://jupyterlab.readthedocs.io/en/stable/user/interface.html>`_ and the `Jupyter Notebook documentation <https://jupyter-notebook.readthedocs.io/en/stable/notebook.html>`_ to to get familiar with the user interface.
 
 
-Actual programming
-==================
+1.4 Actual programming
+======================
 
 Printing ``Hello World!`` has been pretty exciting but with Python you can do quite more!
 
@@ -56,8 +56,8 @@ The `section 1.2 <https://scipy-lectures.org/intro/language/python_language.html
 Depending on your inclination, these same basic aspects are covered in more detail in chapters 1 to 5 of the excellent official `Python tutorial <https://docs.python.org/3/tutorial/>`_, while if you are planning to develop code, consider going through the chapters 6 to 10.
 
 
-Modules and packages
-====================
+1.5 Modules and packages
+========================
 
 In the following are reported a few key concepts strictly related to programming, but which have to be clear in order to use Python for data analysis.
 

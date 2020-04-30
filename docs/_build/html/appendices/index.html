@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Packaging &mdash; rescipy-lectures  documentation</title>
+  <title>Appendices &mdash; rescipy-lectures  documentation</title>
   
 
   
@@ -36,7 +36,9 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" /> 
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="A. Packages installation" href="packages_installation.html" />
+    <link rel="prev" title="5. Dashboarding" href="../dashboarding.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -84,13 +86,16 @@
             
             
               <p class="caption"><span class="caption-text">Contents</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../python.html">Python language</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../data.html">Data handling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../plotting.html">Plotting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../analysis.html">Analysis</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../dashboarding.html">Dashboarding</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../advanced.html">Advanced topics</a></li>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../python.html">1. Python language</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data.html">2. Data handling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plotting.html">3. Plotting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis.html">4. Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dashboarding.html">5. Dashboarding</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Appendices</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="packages_installation.html">A. Packages installation</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -136,13 +141,13 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>Packaging</li>
+      <li>Appendices</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/advanced_topics/packaging.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/appendices/index.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -155,42 +160,13 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="packaging">
-<h1>Packaging<a class="headerlink" href="#packaging" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="prerequisites">
-<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="https://packaging.python.org/tutorials/packaging-projects/">pip instructions</a></p>
-<p>Install pip utilities:</p>
-<p>pip install twine setuptools wheel</p>
-<p>In the setup.py folder, create the package:</p>
-<p>python3 setup.py sdist bdist_wheel</p>
-<p>Upload it to PyPi (you need an account):</p>
-<p>python3 -m twine upload dist/*</p>
-<p><a class="reference external" href="https://docs.conda.io/projects/conda-build/en/latest/user-guide/tutorials/build-pkgs-skeleton.html">conda instructions</a></p>
-<p>Once you have a package [packagename] in PyPi, install conda utilities:</p>
-<p>conda install conda-build anaconda-client</p>
-<p>Generate setup files:</p>
-<p>conda skeleton pypi [packagename]</p>
-<p>If [packagename] requires additional packages use:</p>
-<p>conda skeleton pypi –extra-specs [additionalpackage] [packagename]</p>
-<p>If the [additionalpackage] is in a particular channel (e.g. conda-forge) you have also to add the channel to you rconfiguration:</p>
-<p>conda config –append channels conda-forge</p>
-<p>Building for your platform and the Python version of your environment:</p>
-<p>conda-build [packagename]</p>
-<p>Building for your platform and a specific Python version
-conda-build –python 3.7 [packagename]</p>
-<p>this will create build files:
-~/miniconda/conda-bld/linux-64/[packagename]-py37_0.tar.bz2</p>
-<p>Converting for all platforms:</p>
-<p>conda convert –platform all ~/miniconda/conda-bld/linux-64/[packagename].tar.bz2 -o outputdir/</p>
-<p>Upload to Anaconda (you need an account on Anaconda.org). Login first:</p>
-<p>anaconda login</p>
-<p>Upload (you need to to this for each platform/Python version you created):</p>
-<p>anaconda upload ~/miniconda/conda-bld/linux-64/[packagename]-py37_0.tar.bz2</p>
-<p>Logout:</p>
-<p>anaconda logout</p>
-<p>To clean up your folders:</p>
-<p>conda build purge</p>
+  <div class="section" id="appendices">
+<h1>Appendices<a class="headerlink" href="#appendices" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="packages_installation.html">A. Packages installation</a></li>
+</ul>
 </div>
 </div>
 
@@ -199,6 +175,15 @@ conda-build –python 3.7 [packagename]</p>
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="packages_installation.html" class="btn btn-neutral float-right" title="A. Packages installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../dashboarding.html" class="btn btn-neutral float-left" title="5. Dashboarding" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

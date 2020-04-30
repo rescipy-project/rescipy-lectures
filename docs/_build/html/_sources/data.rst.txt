@@ -1,19 +1,19 @@
-=============
-Data handling
-=============
+================
+2. Data handling
+================
 
-Introduction
-============
+2.1 Introduction
+================
 
 Standard Python containers, such as lists and dictionaries, are not designed for numerical computation. In order to efficiently perform scientific calculations, the **NumPy** package provides powerful multi-dimensional array objects, with related functions and tools for numerical calculations.
 
 In the following sections *NumPy arrays* and higher-level data containers built on top of them (namely **pandas** *DataFrames* and **xarray** *Datasets*) will be introduced. The last section will describe how to load scientific data and conveniently store it in the *NeXus/HDF5* file format.
 
-**Important note**: before going through this lecture you need to install the ``nxarray`` package from the ``rescipy`` channel. Check the section on :doc:`Packages installation </advanced_topics/packages_installation>` to learn how to do it.
+**Important note**: before going through this lecture you need to install the ``nxarray`` package from the ``rescipy`` channel. Check the section on :doc:`Packages installation </appendices/packages_installation>` to learn how to do it.
 
 
-NumPy arrays
-============
+2.2 NumPy arrays
+================
 
 *Numpy arrays*, provided by the `NumPy <https://numpy.org/>`_ package, are the core objects for numerical calculation in Python. Such arrays are multi-dimensional data containers, efficiently mapped into hardware memory. An array, for example, could contain measurement of an experiment, a recorded signal, pixel intensities of an image or point values in multi-dimensional space.
 
@@ -22,8 +22,8 @@ To have a first overview of the NumPy package and *NumPy arrays* follow the rela
 https://numpy.org/devdocs/user/absolute_beginners.html
 
 
-Extending NumPy
-===============
+2.3 Extending NumPy
+===================
 
 NumPy provides a set of very powerful functions for data analysis, and *NumPy arrays* are extremely robust and efficient for numerical computation. On the other hand, in practical data analysis, it could be difficult to handle, explore and relate between them these arrays.
 
@@ -38,8 +38,8 @@ To this concern, the `xarray <http://xarray.pydata.org/en/stable/>`_ package, bu
 Here, it is worth noting, that another important aspect provided by xarray is the possibility to easily extend it with domain-specific functionalities, by `adding custom 'accessors' <http://xarray.pydata.org/en/stable/internals.html#extending-xarray>`_ on the xarray objects.
 
 
-Loading and saving
-==================
+2.4 Loading and saving
+======================
 
 The examples and tutorials in the previous sections already showed some basics of data loading and saving, for `NumPy <https://scipy-lectures.org/intro/numpy/advanced_operations.html#loading-data-files>`_, `pandas <https://pandas.pydata.org/docs/getting_started/10min.html#getting-data-in-out>`_ and `xarray <http://xarray.pydata.org/en/stable/quick-overview.html#read-write-netcdf-files>`_ respectively.
 

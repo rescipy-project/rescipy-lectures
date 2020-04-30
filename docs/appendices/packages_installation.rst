@@ -1,6 +1,6 @@
-=====================
-Packages installation
-=====================
+========================
+A. Packages installation
+========================
 
 Anaconda Navigator
 ==================

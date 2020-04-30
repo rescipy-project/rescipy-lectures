@@ -1,12 +1,12 @@
-===============
-Advanced topics
-===============
+==========
+Appendices
+==========
 
 .. toctree::
    :caption: Contents
    :maxdepth: 1
    
-   /advanced_topics/packages_installation
+   packages_installation
 
 .. 
     Introduction
