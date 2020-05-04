@@ -16,4 +16,4 @@ Example with nxarray
 
 Let's see, as an example, how to install the ``nxarray`` package from the ``rescipy`` channel.
 
-Select the ``Environment`` section on the left pane. Check that the filter is set to ``All`` and not only to ``Installed``. Press the ``Channels`` button, select ``Add`` and write ``rescipy`` and then ``Update channels``. When updating has finished, search ``nxarray``, select it and hit ``Apply`` on the lower right corner. The ``nxarray`` package will be installed together with the ``nexusformat`` and ``xarray`` dependencies.
+Select the ``Environment`` section on the left pane. Check that the filter is set to ``All`` and not only to ``Installed``. Press the ``Channels`` button. Check that ``defaults`` and ``conda-forge`` channels are already present, otherwise add them. Select ``Add`` and write ``rescipy`` and then ``Update channels``. When updating has finished, search ``nxarray``, select it and hit ``Apply`` on the lower right corner. The ``nxarray`` package will be installed together with the ``nexusformat`` and ``xarray`` dependencies.

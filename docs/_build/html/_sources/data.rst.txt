@@ -19,8 +19,6 @@ In the following sections *NumPy arrays* and higher-level data containers built 
 
 To have a first overview of the NumPy package and *NumPy arrays* follow the related `chapter 1.4 <https://scipy-lectures.org/intro/numpy/index.html>`_ of the SciPy lectures, the official `quick-start guide <https://numpy.org/devdocs/user/quickstart.html>`_ and the `basics for beginners <https://numpy.org/devdocs/user/absolute_beginners.html>`_. Few of these examples will also introduce already some basics of data plotting. For a more technical insight, you can have also a look at `chapter 2.2 <https://scipy-lectures.org/advanced/advanced_numpy/index.html>`_ of the SciPy lectures.
 
-https://numpy.org/devdocs/user/absolute_beginners.html
-
 
 2.3 Extending NumPy
 ===================
@@ -33,9 +31,9 @@ The most popular of these packages is `pandas <https://pandas.pydata.org/>`_, wh
 
 Pandas is a very powerful package that makes tabular data handling much easier. Nevertheless, it does not well support higher-dimensional data and it is missing an integrated management of metadata (the attributes related to your data), thus making it not always suited for scientific research data.
 
-To this concern, the `xarray <http://xarray.pydata.org/en/stable/>`_ package, built on top of NumPy and pandas, fills in excellently these lacks, being often the recommended choice in managing certain scientific data. **xarray** provides the *DataArray* structure, a labeled N-dimensional array with its coordinates and attributes, and the *Dataset* structure, a container of *DataArrays* sharing the same coordinates. To have a better idea of the implementation of these two data structures, check their `design description <http://xarray.pydata.org/en/stable/data-structures.html>`_ and to have an insight on their basic usage have a look at the `quick overview <http://xarray.pydata.org/en/stable/quick-overview.html>`_ on the official website.
+To this concern, the `xarray <http://xarray.pydata.org/en/stable/>`_ package, built on top of NumPy and pandas, fills in excellently these lacks, being often the recommended choice in managing scientific research data. **xarray** provides the *DataArray* structure, a labeled N-dimensional array with its coordinates and attributes, and the *Dataset* structure, a container of *DataArrays* sharing the same coordinates. To have a better idea of the implementation of these two data structures, check their `design description <http://xarray.pydata.org/en/stable/data-structures.html>`_ and to have an insight on their basic usage have a look at the `quick overview <http://xarray.pydata.org/en/stable/quick-overview.html>`_ on the official website.
 
-Here, it is worth noting, that another important aspect provided by xarray is the possibility to easily extend it with domain-specific functionalities, by `adding custom 'accessors' <http://xarray.pydata.org/en/stable/internals.html#extending-xarray>`_ on the xarray objects.
+Here, it is worth noting that another important feature provided by xarray is the possibility to easily extend it with domain-specific functionalities, by `adding custom 'accessors' <http://xarray.pydata.org/en/stable/internals.html#extending-xarray>`_ on the xarray objects. This aspect will be covered in more detail in chapter 4. Analysis.
 
 
 2.4 Loading and saving
