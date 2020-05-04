@@ -8,7 +8,7 @@ Anaconda Navigator
 To install a package from Anaconda Navigator, select the ``Environment`` section on the left pane. The default environment should be ``base (root)`` (in case select a different environment).
 Check that the filter is set to ``All`` and not only to ``Installed``. Search for the package you want to install, select it and hit ``Apply`` on the lower right corner. The package will be installed with all the related dependencies.
 
-If you cannot find the package, or you know the package is available only in a certain channel, press the ``Channels`` button, select ``Add`` and insert the name of the channel you want to add.
+If you cannot find the package, or you know the package is available only in a certain channel, press the ``Channels`` button, select ``Add`` and insert the name of the channel you want to add. Indeed, many packages and dependencies are available through the ``conda-forge`` channel. It is recommended that you add it to your environment.
 
 
 Example with nxarray
