@@ -22,7 +22,7 @@ Select the ``Environment`` section on the left pane. Check that the filter is se
 via Anaconda Prompt
 ===================
 
-You can install a package launching your terminal (or Anaconda Prompt as Administrator if you are using Windows) and typing:
+You can install a package launching your terminal (or Anaconda Prompt as Administrator if you are on Windows) and typing:
 
 .. code-block:: bash
 
@@ -38,7 +38,7 @@ In case you need to add a channel, just type:
 Example with nxarray
 --------------------
 
-To install nxarray through your terminal (or Anaconda Prompt as Administrator in Windows) just type:
+To install nxarray through your terminal (or Anaconda Prompt as Administrator on Windows) just type:
 
 .. code-block:: bash
 
