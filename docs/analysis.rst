@@ -4,7 +4,7 @@
 
 [coming soon]
 
-Last update: 1st May 2020
+Last update: 25th August 2020
 
 .. 
     Introduction

@@ -9,7 +9,7 @@ Prerequisites
 
 Install pip utilities:
 
-pip install twine setuptools wheel
+pip/conda install twine setuptools wheel
 
 In the setup.py folder, create the package:
 
@@ -46,11 +46,11 @@ Building for your platform and a specific Python version
 conda-build --python 3.7 [packagename]
 
 this will create build files:
-~/miniconda/conda-bld/linux-64/[packagename]-py37_0.tar.bz2
+~/miniconda3/conda-bld/linux-64/[packagename]-py37_0.tar.bz2
 
 Converting for all platforms:
 
-conda convert --platform all ~/miniconda/conda-bld/linux-64/[packagename].tar.bz2 -o outputdir/
+conda convert --platform all ~/miniconda3/conda-bld/linux-64/[packagename].tar.bz2 -o outputdir/
 
 Upload to Anaconda (you need an account on Anaconda.org). Login first:
 
@@ -58,7 +58,7 @@ anaconda login
 
 Upload (you need to to this for each platform/Python version you created):
 
-anaconda upload ~/miniconda/conda-bld/linux-64/[packagename]-py37_0.tar.bz2
+anaconda upload ~/miniconda3/conda-bld/linux-64/[packagename]-py37_0.tar.bz2
 
 Logout:
 

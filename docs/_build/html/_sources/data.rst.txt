@@ -9,7 +9,7 @@ Standard Python containers, such as lists and dictionaries, are not designed for
 
 In the following sections *NumPy arrays* and higher-level data containers built on top of them (namely **pandas** *DataFrames* and **xarray** *Datasets*) will be introduced. The last section will describe how to load scientific data and conveniently store it in the *NeXus/HDF5* file format.
 
-**Important note**: before going through this lecture you need to install the ``nxarray`` package from the ``rescipy`` channel. Check the section on :doc:`Packages installation </appendices/packages_installation>` to learn how to do it.
+**Important note**: before going through this lecture you need to add the ``conda-forge`` and ``rescipy`` channels to your environment and install the ``nxarray`` package. Check the section on :doc:`Packages installation </appendices/packages_installation>` to learn how to do it.
 
 
 2.2 NumPy arrays
@@ -43,7 +43,7 @@ The examples and tutorials in the previous sections already showed some basics o
 
 Despite all these packages support import/export of `HDF5 <https://www.hdfgroup.org/solutions/hdf5/>`_ (a file format designed to efficiently store and organize large amount of data), none of them provide an integrated interface to the `NeXus file format <https://www.nexusformat.org/>`_, the standard *de facto* for scientific data storage, based on HDF5 and increasingly adopted in `laboratories and large-scale facilities <https://www.nexusformat.org/Facilities.html>`_ all over the world.
 
-With this respect, the `nxarray <https://nxarray.readthedocs.io/en/latest/>`_ package comes into play, bridging xarray with the NeXus format. This package actually extends xarray, providing convenient loading and saving methods for NeXus files, directly to *DataArrays* and *Datasets*. Indeed the architecture of a NeXus file, closely resembles the structure of an xarray *Dataset*, and even if they have been developed independently, both of them are actually specifically designed for handling scientific data with its relevant metadata.
+With this respect, the `nxarray <https://nxarray.readthedocs.io/en/latest/>`_ package comes into play, bridging xarray with the NeXus format. This package actually extends xarray, providing convenient loading and saving methods for NeXus files, directly to *DataArrays* and *Datasets*. The architecture of a NeXus file closely resembles the structure of an xarray *Dataset*, and indeed, even if they have been developed independently, both of them are actually specifically designed for handling scientific data with its relevant metadata.
 
 After installation, you can already start to use nxarray, by importing it at any moment with:
 

@@ -89,7 +89,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../data.html">2. Data handling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../plotting.html">3. Plotting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../analysis.html">4. Analysis</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../dashboarding.html">5. Dashboarding</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html">Appendices</a></li>
 </ul>
 
@@ -161,7 +160,7 @@
 <h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://packaging.python.org/tutorials/packaging-projects/">pip instructions</a></p>
 <p>Install pip utilities:</p>
-<p>pip install twine setuptools wheel</p>
+<p>pip/conda install twine setuptools wheel</p>
 <p>In the setup.py folder, create the package:</p>
 <p>python3 setup.py sdist bdist_wheel</p>
 <p>Upload it to PyPi (you need an account):</p>
@@ -180,13 +179,13 @@
 <p>Building for your platform and a specific Python version
 conda-build –python 3.7 [packagename]</p>
 <p>this will create build files:
-~/miniconda/conda-bld/linux-64/[packagename]-py37_0.tar.bz2</p>
+~/miniconda3/conda-bld/linux-64/[packagename]-py37_0.tar.bz2</p>
 <p>Converting for all platforms:</p>
-<p>conda convert –platform all ~/miniconda/conda-bld/linux-64/[packagename].tar.bz2 -o outputdir/</p>
+<p>conda convert –platform all ~/miniconda3/conda-bld/linux-64/[packagename].tar.bz2 -o outputdir/</p>
 <p>Upload to Anaconda (you need an account on Anaconda.org). Login first:</p>
 <p>anaconda login</p>
 <p>Upload (you need to to this for each platform/Python version you created):</p>
-<p>anaconda upload ~/miniconda/conda-bld/linux-64/[packagename]-py37_0.tar.bz2</p>
+<p>anaconda upload ~/miniconda3/conda-bld/linux-64/[packagename]-py37_0.tar.bz2</p>
 <p>Logout:</p>
 <p>anaconda logout</p>
 <p>To clean up your folders:</p>

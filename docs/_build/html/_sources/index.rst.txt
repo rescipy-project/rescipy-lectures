@@ -21,7 +21,6 @@ This website is part of the `reScipy project <https://rescipy-project.readthedoc
    data
    plotting
    analysis
-   dashboarding
    appendices/index
 
 
