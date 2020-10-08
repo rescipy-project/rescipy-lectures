@@ -165,18 +165,17 @@
 <h1>3. Plotting<a class="headerlink" href="#plotting" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="introduction">
 <h2>3.1 Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p>Now that you learn how to properly handle your data it is time to visualize it!</p>
-<p>Plotting in Jupyter Notebooks, and more in general in Python, relies mainly on two alternative but complementary packages: <a class="reference external" href="https://matplotlib.org/">matplotlib</a> and <a class="reference external" href="https://bokeh.org">bokeh</a>.</p>
+<p>Now that you learn how to properly handle your data, it is time to visualize it!</p>
+<p>Plotting in Jupyter Notebooks, and in general in Python, relies mainly on two alternative but complementary packages: <a class="reference external" href="https://matplotlib.org/">matplotlib</a> and <a class="reference external" href="https://bokeh.org">bokeh</a>.</p>
 <p><em>Matplotlib</em> is the standard and widely used Python plotting backend that provides static, publication-quality plots, which can be tuned and controlled down to the smallest detail.</p>
 <p><em>Bokeh</em>, on the other hand, provides interactive and dynamic plotting inside Jupyter Notebooks and it is best suited to easily explore your data.</p>
-<p>To make plotting (but not only) easier and more descriptive, the <a class="reference external" href="https://holoviz.org/">holoviz</a> project provides several packages extending matplotlib and bokeh (such as <a class="reference external" href="https://hvplot.holoviz.org">hvplot</a> and <a class="reference external" href="https://holoviews.org">holoviews</a>).
-.. See Section 3.4 for more info.</p>
-<p><strong>Note</strong>: before going through this lecture you need to install the <code class="docutils literal notranslate"><span class="pre">hvplot</span></code> package from the <code class="docutils literal notranslate"><span class="pre">pyviz</span></code> channel. Check the section on <a class="reference internal" href="appendices/packages_installation.html"><span class="doc">Packages installation</span></a> to learn how to do it.</p>
-<p>Before going into the details of these packages, let’s try them out quickly. In case your data is available as an xarray (or pandas) object, you can already plot it very easily with the available methods and without any prior knowledge of the plotting packages. Supposing you have a <code class="docutils literal notranslate"><span class="pre">ds</span></code> <em>Dataset</em> (such as the one from <a class="reference external" href="http://xarray.pydata.org/en/stable/quick-overview.html">xarray examples</a>), it can be simply plotted just with:</p>
+<p>To make plotting (but not only) easier and more descriptive, the <a class="reference external" href="https://holoviz.org/">holoviz</a> project provides several packages extending matplotlib and bokeh (such as <a class="reference external" href="https://hvplot.holoviz.org">hvplot</a> and <a class="reference external" href="https://holoviews.org">holoviews</a>). Make sure to check them out to be proficient in plotting with Python.</p>
+<p><strong>Note</strong>: to go through this lecture you need to install the <code class="docutils literal notranslate"><span class="pre">hvplot</span></code> package from the <code class="docutils literal notranslate"><span class="pre">pyviz</span></code> channel. Check the section on <a class="reference internal" href="appendices/packages_installation.html"><span class="doc">Packages installation</span></a> to learn how to do it.</p>
+<p>Before even introduce how these plotting packages work, let’s try them out quickly. Indeed, in case your data is available as an xarray (or pandas) object, you can already plot it very easily with the available methods and without any prior knowledge of the plotting packages. Supposing you have a <code class="docutils literal notranslate"><span class="pre">ds</span></code> <em>Dataset</em> (such as the one from <a class="reference external" href="http://xarray.pydata.org/en/stable/quick-overview.html">xarray examples</a>), it can be simply plotted just with:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>In this case a <em>matplotlib</em> plot will appear, representing the first available DataArray in your dataset. Obviously the same <code class="docutils literal notranslate"><span class="pre">.plot()</span></code> method is directly available also for single DataArrays (as for pandas Series and DataFrames). As you can see, matplotlib plots are static images (see Section 3.2 for more information).</p>
+<p>A <em>matplotlib</em> plot will appear, representing the first available DataArray in your dataset. Obviously the same <code class="docutils literal notranslate"><span class="pre">.plot()</span></code> method is directly available also for single DataArrays (as well as for pandas Series and DataFrames). As you can see, matplotlib plots are static images (see Section 3.2 for more information).</p>
 <p>To try out <em>bokeh</em> instead, the simplest way is to import the <code class="docutils literal notranslate"><span class="pre">hvplot</span></code> package, which specifically provides additional methods to xarray (and pandas) objects for bokeh plotting:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">hvplot.xarray</span>
 </pre></div>
@@ -185,11 +184,12 @@
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span><span class="o">.</span><span class="n">hvplot</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>And in this case a <em>bokeh</em> plot will appear, representing the same data as the plot before. As before the <code class="docutils literal notranslate"><span class="pre">.hvplot()</span></code> method is available for DataArrays (and pandas Series and DataFrames). As you can see, bokeh plots can be zoomed and panned and many other tools are provided (see Section 3.3 for more details).</p>
+<p>And in this case a <em>bokeh</em> plot will appear, representing the same data as the plot before. As before the <code class="docutils literal notranslate"><span class="pre">.hvplot()</span></code> method is available for DataArrays (as well as for pandas Series and DataFrames). As you can see, bokeh plots can be zoomed and panned and many other tools are provided (see Section 3.3 for more details).</p>
 </div>
 <div class="section" id="publication-quality-figures-matplotlib">
 <h2>3.2 Publication-quality figures: matplotlib<a class="headerlink" href="#publication-quality-figures-matplotlib" title="Permalink to this headline">¶</a></h2>
-<p>Matplotlib is the most used Python package for 2D plotting. The interface to the plotting library is provided by its <em>pyplot</em> module. Supposing we have few simple numpy arrays:</p>
+<p>Matplotlib is the most used Python package for 2D plotting. The interface to the plotting library is provided by its <em>pyplot</em> module.
+Supposing we have few simple numpy arrays:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">256</span><span class="p">)</span>
@@ -210,7 +210,7 @@
 <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>This is the so-called <em>pyplot style</em> in which everything is passed to the <em>plt</em> module that automatically manage the plots. An alternative way to use matplotlib interface is the so-called <em>Object-Oriented (OO) style</em> in which plot objects are assigned explicitly and methods are called on them:</p>
+<p>This workflow is the so-called <em>pyplot style</em> approach, in which everything is passed to the <em>plt</em> module, which automatically manages the plots. An alternative way to use the matplotlib interface is the so-called <em>Object-Oriented (OO) style</em> in which plot objects are assigned explicitly to varibles and their methods are called:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;My Simple Plot&quot;</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;myData&#39;</span><span class="p">)</span>
@@ -221,8 +221,8 @@
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">yy</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>To have a basic introduction on matplotlib function and terminology go through the <a class="reference external" href="https://matplotlib.org/tutorials/introductory/usage.html">Usage Guide</a> while to learn using pyplot check the <a class="reference external" href="https://matplotlib.org/tutorials/introductory/pyplot.html">tutorial</a> and the dedicated <a class="reference external" href="https://scipy-lectures.org/intro/matplotlib/index.html">SciPy lecture</a>.</p>
-<p>Note: to understand when a plot should show up (or why it is not) be sure to read the <a class="reference external" href="https://matplotlib.org/tutorials/introductory/usage.html#what-is-interactive-mode">interactive mode</a> section of the Usage Guide.</p>
+<p>To have a basic introduction on matplotlib functioning and terminology go through the <a class="reference external" href="https://matplotlib.org/tutorials/introductory/usage.html">Usage Guide</a> while to learn using pyplot check the <a class="reference external" href="https://matplotlib.org/tutorials/introductory/pyplot.html">tutorial</a> and the dedicated <a class="reference external" href="https://scipy-lectures.org/intro/matplotlib/index.html">SciPy lecture</a>.</p>
+<p>Useful tip: to understand when a plot should show up (or why it is not) be sure to read the <a class="reference external" href="https://matplotlib.org/tutorials/introductory/usage.html#what-is-interactive-mode">interactive mode</a> section of the Usage Guide.</p>
 </div>
 <div class="section" id="interactive-plotting-bokeh">
 <h2>3.3 Interactive plotting: bokeh<a class="headerlink" href="#interactive-plotting-bokeh" title="Permalink to this headline">¶</a></h2>
@@ -246,7 +246,7 @@
 <span class="n">show</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>As we see above, Bokeh provides several <a class="reference external" href="https://docs.bokeh.org/en/latest/docs/user_guide/tools.html#userguide-tools">tools</a> to explore data. To learn more about Bokeh usage check the <a class="reference external" href="https://docs.bokeh.org/en/latest/docs/user_guide.html">User Guide</a> and the <a class="reference external" href="https://nbviewer.ipython.org/github/bokeh/bokeh-notebooks/blob/master/index.ipynb">Tutorials</a>.</p>
+<p>As we saw above, Bokeh provides several <a class="reference external" href="https://docs.bokeh.org/en/latest/docs/user_guide/tools.html#userguide-tools">tools</a> to explore your data. To learn more about Bokeh usage check the <a class="reference external" href="https://docs.bokeh.org/en/latest/docs/user_guide.html">User Guide</a> and the <a class="reference external" href="https://nbviewer.ipython.org/github/bokeh/bokeh-notebooks/blob/master/index.ipynb">Tutorials</a>.</p>
 </div>
 </div>
 
