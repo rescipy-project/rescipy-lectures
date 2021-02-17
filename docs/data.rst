@@ -9,7 +9,7 @@ Standard Python containers, such as lists and dictionaries, are not designed for
 
 In the following sections *NumPy arrays* and higher-level data containers built on top of them (namely **pandas** *DataFrames* and **xarray** *Datasets*) will be introduced. The last section will describe how to load scientific data and conveniently store it in the *NeXus/HDF5* file format.
 
-**Important note**: before going through this lecture you need to add the ``conda-forge`` and ``rescipy`` channels to your environment and install the ``nxarray`` package. Check the section on :doc:`Packages installation </appendices/packages_installation>` to learn how to do it.
+**Important note**: before going through this lecture you need to add the ``conda-forge`` channel to your environment and install the ``nxarray`` package through pip. Check the section on :doc:`Packages installation </appendices/packages_installation>` to learn how to do it.
 
 
 2.2 NumPy arrays

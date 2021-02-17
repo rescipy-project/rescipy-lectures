@@ -20,13 +20,13 @@ To make plotting (but not only) easier and more descriptive, the `holoviz <https
 
 **Note**: to go through this lecture you need to install the ``hvplot`` package from the ``pyviz`` channel. Check the section on :doc:`Packages installation </appendices/packages_installation>` to learn how to do it.
 
-Before even introduce how these plotting packages work, let's try them out quickly. Indeed, in case your data is available as an xarray (or pandas) object, you can already plot it very easily with the available methods and without any prior knowledge of the plotting packages. Supposing you have a ``ds`` *Dataset* (such as the one from `xarray examples <http://xarray.pydata.org/en/stable/quick-overview.html>`_), it can be simply plotted just with:
+Before even introducing how these plotting packages work, let's try them out quickly. Indeed, in case your data is available as an xarray (or pandas) object, you can already plot it very easily with the available methods and without any prior knowledge of the plotting packages. Supposing you have a ``ds`` *Dataset* (such as the one from the `xarray examples <http://xarray.pydata.org/en/stable/quick-overview.html>`_), it can be simply plotted just with:
 
 .. code-block:: python
     
     ds.plot()
 
-A *matplotlib* plot will appear, representing the first available DataArray in your dataset. Obviously the same ``.plot()`` method is directly available also for single DataArrays (as well as for pandas Series and DataFrames). As you can see, matplotlib plots are static images (see Section 3.2 for more information).
+A *matplotlib* plot will appear, representing the first available DataArray in your Dataset. Obviously the same ``.plot()`` method is directly available also for single DataArrays (as well as for pandas Series and DataFrames). As you can see, matplotlib plots are static images (see Section 3.2 for more information).
 
 To try out *bokeh* instead, the simplest way is to import the ``hvplot`` package, which specifically provides additional methods to xarray (and pandas) objects for bokeh plotting:
 
@@ -68,7 +68,7 @@ and create a plot simply with:
     
     plt.plot(x, c)
 
-Plot properties can be set through the dedicated *plt* methods, e.g.:
+The plot properties can be set through the dedicated *plt* methods, *e.g.*:
 
 .. code-block:: python
     
@@ -76,7 +76,7 @@ Plot properties can be set through the dedicated *plt* methods, e.g.:
     plt.plot(x, c, label='myData')
     plt.legend()
 
-This workflow is the so-called *pyplot style* approach, in which everything is passed to the *plt* module, which automatically manages the plots. An alternative way to use the matplotlib interface is the so-called *Object-Oriented (OO) style* in which plot objects are assigned explicitly to varibles and their methods are called:
+This workflow is the so-called *pyplot-style* approach, in which everything is passed to the *plt* module, which automatically manages the plots. An alternative way to use the matplotlib interface is the so-called *Object-Oriented (OO)-style* in which plot objects are assigned explicitly to variables on which methods are called:
 
 .. code-block:: python
     
@@ -99,7 +99,7 @@ Useful tip: to understand when a plot should show up (or why it is not) be sure 
 3.3 Interactive plotting: bokeh
 ===============================
 
-Matplotlib is very powerful when it comes to control each aspect of your figure. On the other hand it is not always the quickest way to explore your data. Bokeh provides several tools to explore or stream your data, but also to combine plots and widgets within applications or dashboards.
+Matplotlib is very powerful when it comes to control each aspect of your figure. On the other hand it is not always the quickest way to explore your data. In this case, Bokeh comes into play, providing several tools to explore or stream your data, but also to combine plots and widgets within applications or dashboards.
 
 The standard import for Bokeh in a Jupyter Notebook is:
 
@@ -127,7 +127,7 @@ Also in this case we can explicitly use the *OO-style* and change the plot prope
     l.glyph.line_width = 2
     show(p)
 
-As we saw above, Bokeh provides several `tools <https://docs.bokeh.org/en/latest/docs/user_guide/tools.html#userguide-tools>`_ to explore your data. To learn more about Bokeh usage check the `User Guide <https://docs.bokeh.org/en/latest/docs/user_guide.html>`_ and the `Tutorials <https://nbviewer.ipython.org/github/bokeh/bokeh-notebooks/blob/master/index.ipynb>`_.
+To learn more about Bokeh usage check the `User Guide <https://docs.bokeh.org/en/latest/docs/user_guide.html>`_ and the `Tutorials <https://nbviewer.ipython.org/github/bokeh/bokeh-notebooks/blob/master/index.ipynb>`_.
 
 
 ..  3.4 Expressive visualization: holoviews

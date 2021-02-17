@@ -26,7 +26,6 @@
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -92,14 +91,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../analysis.html">4. Analysis</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Appendices</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">A. Packages installation</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#via-anaconda-navigator">via Anaconda Navigator</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#example-with-nxarray">Example with nxarray</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#via-anaconda-prompt">via Anaconda Prompt</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id1">Example with nxarray</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="#via-anaconda-navigator">via Anaconda Navigator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#via-anaconda-prompt">via Anaconda Prompt</a></li>
 </ul>
 </li>
 </ul>
@@ -176,12 +169,8 @@
 <h2>via Anaconda Navigator<a class="headerlink" href="#via-anaconda-navigator" title="Permalink to this headline">¶</a></h2>
 <p>To install a package from Anaconda Navigator, select the <code class="docutils literal notranslate"><span class="pre">Environment</span></code> section on the left pane. The default environment should be <code class="docutils literal notranslate"><span class="pre">base</span> <span class="pre">(root)</span></code> (in case select a different environment).
 Check that the filter is set to <code class="docutils literal notranslate"><span class="pre">All</span></code> and not only to <code class="docutils literal notranslate"><span class="pre">Installed</span></code>. Search for the package you want to install, select it and hit <code class="docutils literal notranslate"><span class="pre">Apply</span></code> on the lower right corner. The package will be installed with all the related dependencies.</p>
-<p>If you cannot find the package, or you know the package is available only in a certain channel, press the <code class="docutils literal notranslate"><span class="pre">Channels</span></code> button, select <code class="docutils literal notranslate"><span class="pre">Add</span></code> and insert the name of the channel you want to add. Indeed, many packages and dependencies are available through the <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code> channel. It is recommended that you add it to your environment.</p>
-<div class="section" id="example-with-nxarray">
-<h3>Example with nxarray<a class="headerlink" href="#example-with-nxarray" title="Permalink to this headline">¶</a></h3>
-<p>Let’s see, as an example, how to install the <code class="docutils literal notranslate"><span class="pre">nxarray</span></code> package from the <code class="docutils literal notranslate"><span class="pre">rescipy</span></code> channel.</p>
-<p>Select the <code class="docutils literal notranslate"><span class="pre">Environment</span></code> section on the left pane. Check that the filter is set to <code class="docutils literal notranslate"><span class="pre">All</span></code> and not only to <code class="docutils literal notranslate"><span class="pre">Installed</span></code>. Press the <code class="docutils literal notranslate"><span class="pre">Channels</span></code> button. Add the <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code> and <code class="docutils literal notranslate"><span class="pre">rescipy</span></code> channels with the <code class="docutils literal notranslate"><span class="pre">Add</span></code> button, then press <code class="docutils literal notranslate"><span class="pre">Update</span> <span class="pre">channels</span></code>. When updating has finished, search <code class="docutils literal notranslate"><span class="pre">nxarray</span></code>, select it and hit <code class="docutils literal notranslate"><span class="pre">Apply</span></code> on the lower right corner. The <code class="docutils literal notranslate"><span class="pre">nxarray</span></code> package will be installed together with the <code class="docutils literal notranslate"><span class="pre">nexusformat</span></code> and <code class="docutils literal notranslate"><span class="pre">xarray</span></code> dependencies.</p>
-</div>
+<p>If you know the package is available only in a certain channel, press the <code class="docutils literal notranslate"><span class="pre">Channels</span></code> button, select <code class="docutils literal notranslate"><span class="pre">Add</span></code> and insert the name of the channel you want to add. Indeed, many packages and dependencies are available through the <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code> channel. It is recommended that you add it to your environment.</p>
+<p>If you cannot find the package in any channel, then the package is not available through conda and you need to install it with pip. See the next section.</p>
 </div>
 <div class="section" id="via-anaconda-prompt">
 <h2>via Anaconda Prompt<a class="headerlink" href="#via-anaconda-prompt" title="Permalink to this headline">¶</a></h2>
@@ -193,13 +182,9 @@ Check that the filter is set to <code class="docutils literal notranslate"><span
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ conda config --add channels <span class="o">[</span>channelname<span class="o">]</span>
 </pre></div>
 </div>
-<div class="section" id="id1">
-<h3>Example with nxarray<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<p>To install nxarray through your terminal (or Anaconda Prompt as Administrator on Windows) just type:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ conda config --add channels conda-forge rescipy
-$ conda install nxarray
+<p>In case the package is not available through conda, you can install it with pip:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ pip install <span class="o">[</span>packagename<span class="o">]</span>
 </pre></div>
-</div>
 </div>
 </div>
 </div>
