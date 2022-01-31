@@ -5,7 +5,7 @@ Packaging
 Prerequisites
 =============
 
-`pip instructions <https://packaging.python.org/tutorials/packaging-projects/>`_
+In case you want to package and publish your on project here you can find the `pip instructions <https://packaging.python.org/tutorials/packaging-projects/>`_
 
 Install pip utilities:
 

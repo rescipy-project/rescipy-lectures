@@ -7,6 +7,7 @@ Appendices
    :maxdepth: 1
    
    packages_installation
+   useful_packages
 
 .. 
     Introduction

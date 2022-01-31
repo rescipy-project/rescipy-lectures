@@ -9,6 +9,8 @@ reScipy lectures
 
 **Tutorials on Python for scientific research.**
 
+reScipy lectures is a collection of tutorials aiming to provide researchers with documentation to easily start performing scientific data analysis with the Python programming language.
+
 These tutorials are heavily based on the `Scientific Python Lecture Notes <https://scipy-lectures.org/>`_, while they attempt to provide additional information on the Python ecosystem, specifically for scientific research.
 
 This website is part of the `reScipy project <https://rescipy-project.readthedocs.io>`_.
@@ -20,7 +22,6 @@ This website is part of the `reScipy project <https://rescipy-project.readthedoc
    python
    data
    plotting
-   analysis
    appendices/index
 
 
