@@ -1,10 +1,10 @@
-==============================================
-Useful Python packages for scientific research
-==============================================
+=======================================
+Python packages for scientific research
+=======================================
 
 This page lists some useful packages for scientific research with Python. If you are new to Python, start with the introductory tutorials of the :doc:`reScipy lectures </index>` to learn how to use this programming language to perform data analysis.
 
-The packages are divided into categories depending on the application domain, with a link to the relevant section of the lectures. Many of these packages are already included in the most common Python distributions, others can be installed as explained in their related documentation or in the :doc:`Packages installation </appendices/packages_installation>` appendix.
+Packages are divided into different categories, depending on the application domain, with a link to the relevant section of the lectures. Many of these packages are already included in the most common Python distributions, others can be installed as explained in their documentation or in the :doc:`Packages installation </appendices/packages_installation>` appendix.
 
 
 Environments
@@ -53,28 +53,30 @@ Data analysis
 =============
 See the related websites and the documentation links provided for an exhaustive description of these packages.
 
-* `scipy <https://scipy.org/>`_ | Performant algorithms for scientific computing such as optimization, integration, interpolation, algebraic equations, differential equations. See also `Scipy : high-level scientific computing <https://scipy-lectures.org/intro/scipy.html>`_ and `Image manipulation and processing using Numpy and Scipy <https://scipy-lectures.org/advanced/image_processing/index.html>`_.
-* `scikit-image <https://scikit-image.org/>`_ | Collection of algorithms for image processing. See also `Scikit-image: image processing <https://scipy-lectures.org/packages/scikit-image/index.html>`_.
-* `lmfit <https://lmfit.github.io/lmfit-py/>`_ | Advanced high-level interface to non-linear optimization and curve fitting.
-* `nexpy <https://nexpy.github.io/nexpy/>`_ | Graphical user interface for easily access and analyse NeXus data. See in particular `Python Graphical User Interface <https://nexpy.github.io/nexpy/pythongui.html>`_.
+* `scipy <https://scipy.org/>`_ | Performant algorithms for scientific computing such as optimization, integration, interpolation, algebraic equations, differential equations (see also `Scipy : high-level scientific computing <https://scipy-lectures.org/intro/scipy.html>`_ and `Image manipulation and processing using Numpy and Scipy <https://scipy-lectures.org/advanced/image_processing/index.html>`_).
+* `scikit-image <https://scikit-image.org/>`_ | Collection of algorithms for image processing (see also `Scikit-image: image processing <https://scipy-lectures.org/packages/scikit-image/index.html>`_).
+* `lmfit <https://lmfit.github.io/lmfit-py/>`_ | Advanced high-level interface for non-linear optimization and curve fitting.
+* `nexpy <https://nexpy.github.io/nexpy/>`_ | Graphical user interface to easily access and analyse NeXus data (see in particular `NeXpy - Python Graphical User Interface <https://nexpy.github.io/nexpy/pythongui.html>`_).
 
+
+Visualization and dashboarding
+==============================
 
 If you are specifically interested in an overview of the packages for data visualization and dashboarding then `pyviz.org <https://pyviz.org/>`_ is what you are looking for. In the following are listed some of these packages.
 
 
 Multi-dimensional visualization
-===============================
+-------------------------------
 
-* `ipyvolume <https://ipyvolume.readthedocs.io/>`_
-* `pyvista <https://docs.pyvista.org/>`_
-* `mayavi <https://docs.enthought.com/mayavi/mayavi/>`_
-* `paraview <https://www.paraview.org/>`_
+* `ipyvolume <https://ipyvolume.readthedocs.io/>`_ | Library to visualize 3d volumes and 3d scatter plots in jupyterlab.
+* `pyvista <https://docs.pyvista.org/>`_ | Module to generate and visualize 3d meshes and scatter plots from NumPy arrays.
+* `mayavi <https://docs.enthought.com/mayavi/mayavi/>`_ | Visualization of scalar, vector and tensor data in 2d and 3d (as Python module or through graphical user interface).
+* `paraview <https://www.paraview.org/>`_ | Interactive 3d data exploration through Python scripting or graphical user interface.
 
 
 Dashboarding
-============
+------------
 
-* `ipywidgets <https://ipywidgets.readthedocs.io/>`_
-* `voila <https://voila.readthedocs.io/>`_
-* `panel <https://panel.holoviz.org/>`_
-* `param <https://param.holoviz.org/>`_
+* `ipywidgets <https://ipywidgets.readthedocs.io/>`_ | Widget library to build interactive user interfaces within jupyterlab.
+* `voila <https://voila.readthedocs.io/>`_ | Conversion of Jupyter notebooks into shareable interactive dashboards.
+* `panel <https://panel.holoviz.org/>`_ | Library to create custom interactive web apps and dashboards with user-defined widgets.
