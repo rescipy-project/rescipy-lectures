@@ -30,7 +30,13 @@ You can install a package launching your terminal (or Anaconda Prompt as Adminis
 
     $ conda install [packagename]
 
-In case you need to add a channel, just type:
+Or in case you need to install it from a particular channel:
+
+.. code-block:: bash
+
+    $ conda install -c [channelname] [packagename]
+
+To add a channel to your environment, so packages are installed directly from it, just type:
 
 .. code-block:: bash
 

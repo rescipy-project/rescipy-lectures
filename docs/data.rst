@@ -79,6 +79,6 @@ This time, when you will load it, a *Dataset* will be returned, with your origin
     my_data = ds2['data']
 
 This section concludes with a consideration. **NeXus**, as reported by its `website introduction <https://manual.nexusformat.org/introduction.html>`_, 'is an effort by an international group of scientists motivated to define a common data exchange format'. Indeed, NeXus/HDF5 files are the best choice to save scientific data, and scientist are (and should) adopting it extensively.
-Data values stored in .nxs file are in binary format, which is the most efficient way to handle numbers, in term of disk space and computational speed. At the same time, .nxs files can be easily loaded and its content visualized quickly, together with all the relevant metadata associated. If you still are inclined to save your data as plain text because 'I can see what's inside', most probably you are simply using the wrong tools to access your data. As the wise man said:
+Data values stored in .nxs file are in binary format, which is the most efficient way to handle numbers, in term of disk space and computational speed. At the same time, .nxs files can be easily loaded and their content visualized quickly, together with all the relevant metadata associated. If you still are inclined to save your data as plain text because 'I can see what's inside', most probably you are simply using the wrong tools to access your data. As the wise man said:
 
 *"You are a scientist, not a novelist. Save your data as binary, not as text."*

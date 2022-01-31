@@ -6,7 +6,7 @@
 3.1 Introduction
 ================
 
-Now that you learn how to properly handle your data, it is time to visualize it!
+Now that you learn how to properly handle your data, it is time to visualise it!
 
 Plotting in Jupyter Notebooks, and in general in Python, relies mainly on two alternative but complementary packages: `matplotlib <https://matplotlib.org/>`_ and `bokeh <https://bokeh.org>`_.
 
@@ -91,11 +91,11 @@ To plot an image (*i.e.* a 2D array, here ``yy``) you can use ``imshow()``:
     
     plt.imshow(yy)
 
-To have a basic introduction on matplotlib functioning and terminology go through the `Usage Guide <https://matplotlib.org/tutorials/introductory/usage.html>`_ while to learn using pyplot check the `tutorial <https://matplotlib.org/tutorials/introductory/pyplot.html>`_ and the dedicated `SciPy lecture <https://scipy-lectures.org/intro/matplotlib/index.html>`_.
+To have a basic introduction on matplotlib functioning and terminology go through the `Usage Guide <https://matplotlib.org/tutorials/introductory/usage.html>`_, while to learn using pyplot check the `tutorial <https://matplotlib.org/tutorials/introductory/pyplot.html>`_ and the dedicated `SciPy lecture <https://scipy-lectures.org/intro/matplotlib/index.html>`_.
 
 *Useful tip*: to understand when a plot should show up (or why it is not) be sure to read the `interactive mode <https://matplotlib.org/tutorials/introductory/usage.html#what-is-interactive-mode>`_ section of the Usage Guide.
 
-If you are looking for a simpler and quicker interface to matplotlib have a look at `seaborn <https://seaborn.pydata.org/>`_, an high-level interface built on top of matplotlib and integrating closely with pandas data structures. Check out the `gallery <https://seaborn.pydata.org/examples/index.html>`_ to see how to obtain publication quality figures with few lines of codes.
+If you are looking for a simpler and quicker interface to matplotlib, have a look at `seaborn <https://seaborn.pydata.org/>`_, an high-level interface built on top of matplotlib and integrating closely with pandas data structures. Check out the `gallery <https://seaborn.pydata.org/examples/index.html>`_ to see how to obtain publication quality figures with few lines of codes.
 
 
 3.3 Interactive plotting: bokeh
@@ -110,7 +110,7 @@ The standard import for Bokeh in a Jupyter Notebook is:
     from bokeh.plotting import figure, output_notebook, show
     output_notebook()
 
-Here ``output_notebook()`` tells Bokeh to show the plot inline.
+Here ``output_notebook()`` tells Bokeh to show the plot inline within the notebook.
 
 To create a plot just type:
 
