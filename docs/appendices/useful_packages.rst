@@ -53,6 +53,7 @@ Data analysis
 =============
 See the related websites and the documentation links provided for an exhaustive description of these packages.
 
+* `mantid <https://www.mantidproject.org/>`_ | General-purpose graphical user interface and Python library to support the processing of materials-science data.
 * `scipy <https://scipy.org/>`_ | Performant algorithms for scientific computing such as optimization, integration, interpolation, algebraic equations, differential equations (see also `Scipy : high-level scientific computing <https://scipy-lectures.org/intro/scipy.html>`_ and `Image manipulation and processing using Numpy and Scipy <https://scipy-lectures.org/advanced/image_processing/index.html>`_).
 * `scikit-image <https://scikit-image.org/>`_ | Collection of algorithms for image processing (see also `Scikit-image: image processing <https://scipy-lectures.org/packages/scikit-image/index.html>`_).
 * `lmfit <https://lmfit.github.io/lmfit-py/>`_ | Advanced high-level interface for non-linear optimization and curve fitting.
@@ -69,14 +70,13 @@ Multi-dimensional visualization
 -------------------------------
 
 * `ipyvolume <https://ipyvolume.readthedocs.io/>`_ | Library to visualize 3d volumes and 3d scatter plots in jupyterlab.
-* `pyvista <https://docs.pyvista.org/>`_ | Module to generate and visualize 3d meshes and scatter plots from NumPy arrays.
 * `mayavi <https://docs.enthought.com/mayavi/mayavi/>`_ | Visualization of scalar, vector and tensor data in 2d and 3d (as Python module or through graphical user interface).
-* `paraview <https://www.paraview.org/>`_ | Interactive 3d data exploration through Python scripting or graphical user interface.
 
 
 Dashboarding
 ------------
 
-* `ipywidgets <https://ipywidgets.readthedocs.io/>`_ | Widget library to build interactive user interfaces within jupyterlab.
-* `voila <https://voila.readthedocs.io/>`_ | Conversion of Jupyter notebooks into shareable interactive dashboards.
+* `streamlit <https://streamlit.io/>`_ | Framework to quickly build shareable web apps from scripts.
 * `panel <https://panel.holoviz.org/>`_ | Library to create custom interactive web apps and dashboards with user-defined widgets.
+* `voila <https://voila.readthedocs.io/>`_ | Conversion of Jupyter notebooks into shareable interactive dashboards.
+* `ipywidgets <https://ipywidgets.readthedocs.io/>`_ | Widget library to build interactive user interfaces within jupyterlab.
