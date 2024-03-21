@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'rescipy-lectures'
-copyright = '2022, Mirco Panighel'
+copyright = '2024, Mirco Panighel'
 author = 'Mirco Panighel'
 
 
@@ -34,6 +34,9 @@ master_doc = "index"
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'sphinx.ext.autodoc',
+    'sphinx.ext.inheritance_diagram',
+    'autoapi.extension'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -59,3 +62,15 @@ html_favicon = 'logo/rescipy_icon.png'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+# Sphinx-autoapi configuration
+autoapi_dirs = ['../rescipy-lectures']
+autoapi_type = 'python'
+autoapi_options = ['members',
+                   'undoc-members',
+                   #'private-members',
+                   'show-inheritance',
+                   'show-module-summary',
+                   #'special-members',
+                   'imported-members'
+                   ]
