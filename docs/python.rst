@@ -16,6 +16,8 @@ An overview of the Python scientific ecosystem is given in `section 1.1 <https:/
 
 Python comes in various flavors and can be installed in different ways. However, the easiest way to have Python in your system is to install a scientific distribution such as the `Anaconda distribution <https://www.anaconda.com/distribution/>`_, which provides a manager for a full set of libraries and software to perform data analysis with Python.
 
+Alternatively, if you want more control on the installed packages and a better optimization you can install the :doc:`Miniforge distribution </appendices/miniforge>`.
+
 
 1.3 Usage
 =========
