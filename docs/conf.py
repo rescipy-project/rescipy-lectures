@@ -64,7 +64,7 @@ html_favicon = 'logo/rescipy_icon.png'
 # html_static_path = ['_static']
 
 # Sphinx-autoapi configuration
-autoapi_dirs = ['.']
+autoapi_dirs = ['..']
 autoapi_type = 'python'
 autoapi_options = ['members',
                    'undoc-members',
