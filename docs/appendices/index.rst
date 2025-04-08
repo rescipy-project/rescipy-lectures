@@ -8,6 +8,7 @@ Appendices
    
    packages_installation
    useful_packages
+   miniforge
 
 .. 
     Introduction
