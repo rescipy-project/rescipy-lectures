@@ -38,7 +38,7 @@ Within this environment you can now install new packages. Here follows a list of
     $(which python) -m ipykernel install --user
 
     mamba install h5py nodejs scikit-image
-    mamba install xarray lmfit nexusformat nexpy
+    mamba install xarray lmfit nexusformat nexpy xarray-lmfit
     mamba install -c mantid mantid mantidworkbench
 
-    pip install nxarray
+    pip install nxarray lmfitxps
