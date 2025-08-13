@@ -5,15 +5,15 @@ Packaging
 Prerequisites
 =============
 
-In case you want to package and publish your on project here you can find the `pip instructions <https://packaging.python.org/tutorials/packaging-projects/>`_
+In case you want to package and publish your on project, here you can find the `pip instructions <https://packaging.python.org/en/latest/tutorials/packaging-projects/>`_
 
 Install pip utilities:
 
-pip/conda install twine setuptools wheel
+pip/conda install build twine
 
-In the setup.py folder, create the package:
+In the pyproject.toml folder, create the package:
 
-python3 setup.py sdist bdist_wheel
+python3 -m build
 
 Upload it to PyPi (you need an account):
 
