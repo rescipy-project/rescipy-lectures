@@ -9,7 +9,8 @@ In case you want to package and publish your on project, here you can find the `
 
 Install pip utilities:
 
-pip/conda install build twine
+pip install build
+pip/conda install twine
 
 In the pyproject.toml folder, create the package:
 
