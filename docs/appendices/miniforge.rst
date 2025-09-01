@@ -24,21 +24,12 @@ After installation, Miniforge comes with a very minimun set of packages. The bes
 
 .. code-block:: bash
 
-    mamba create -n jlab
+    mamba create -n jlab python=3.11
     mamba activate jlab
 
-Within this environment you can now install new packages. Here follows a list of commands to create a quite complete environment for data analysis. For more information on these packages have a look :doc:`here </appendices/useful_packages>`.
+Within this environment you can now install new packages. Here follows a list of commands to create a quite complete environment for data analysis. For more information on these packages have a look `here </appendices/useful_packages>`_.
 
 .. code-block:: bash
 
-    mamba install jupyterlab
-
-    mamba install holoviews hvplot param panel
-
-    $(which python) -m ipykernel install --user
-
-    mamba install h5py nodejs scikit-image
-    mamba install xarray lmfit nexusformat nexpy xarray-lmfit
-    mamba install -c mantid mantid mantidworkbench
-
+    mamba install jupyterlab hvplot scikit-image nexusformat xarray-lmfit
     pip install nxarray lmfitxps
